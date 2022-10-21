@@ -1,0 +1,314 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HOME</title>
+        <style>
+            /* saya menggunakan internal CSS */
+            *,
+            html {
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                background-color: whitesmoke;
+            }
+            .container-navbar {
+                background-color: white;
+                width: 100%;
+                height: 52px;
+                box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+                display: flex;
+                justify-content: space-around;
+                    
+            }
+            .navbar1 {
+                display: flex;
+                height: 52px;        
+                align-items: center;
+                justify-content: space-between;
+                margin-left: 60%;
+                        
+            }
+            .navbar2 {
+                list-style-type: none;
+                border: 1px solid white;
+                font-size: 11px;
+                padding: 10px;
+                margin: 1px;
+                
+            }
+            .navbar2 a:hover{
+                background-color: grey;
+                border-radius: 10px;
+            }
+            .navbar2 a {
+                text-decoration: none;
+                text-align: center;
+                font-family: arial;
+                color: black;
+            }
+            .content_profile {
+                background-color: white;
+                box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+                width: 85%;
+                height: 150px;
+                margin-top: 40px;
+                margin-left: 100px;
+                margin-right: 50px;
+            }
+            .imeg {
+                border: 1px solid black;
+                border-radius: 50%;
+                overflow: hidden;
+                width: 100px;
+                height: 100px;   
+                margin-left: 20px;
+                margin-top: 25px;
+                
+               
+            }
+            .content2 {
+                text-align: center;
+                width: 150px;
+                height: 50px;
+                position: relative;
+                left: 120px;
+                bottom: 100px;
+            }
+            h2{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 20px;
+                margin-left: 13px;
+            }
+            p{
+                font-family: sans-serif;
+                color: grey;
+                font-size: 11px;
+                text-align: left;
+                margin-left: 15px;
+                margin-top: 10px;
+            }
+            .button{
+                border: 1px solid black;
+                border-radius: 2px;
+                display: inline-block;
+                text-align: center;
+                width: 70px;
+                height: 28px;
+                margin-top: 20px;
+                font-size: 10px;
+                cursor: pointer;
+            }
+            .button1{
+                background-color: rgb(38, 38, 247);
+                color: white;
+                position: relative;
+                left: 12px;
+            }
+            .button2{
+                color: rgb(9, 150, 39);
+                position: relative;
+                left: 17px;
+            }
+            .content3 {
+                position: relative;
+                left: 260px;
+                bottom: 100px;
+            }
+            .data {
+                list-style-type: none;
+            } 
+            .data1 {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 10px;
+                text-align: left;
+                padding: 5px;
+            }
+            .content4 {
+                position: relative;
+                left: 100px;
+                bottom: 110px;
+                width: 200px;
+                height: 100px;
+            }
+            .isidata {
+                list-style-type: none;
+            } 
+            .data2 {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 10px;
+                color: grey;
+                text-align: left;
+                padding: 5px;
+            }
+            .form {
+                background-color: white;
+                width: 100%;
+                height: 200%;
+                margin-top: 15px;
+                margin-left: 1px;
+                margin-right: 80px;
+                position: relative;
+
+            }
+            .pg {
+                font-size: 12px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color: black;
+                text-align: left;
+                position: relative;
+                right: 12px;
+            }
+            .inputdata {
+                width: 100%;
+            }
+            .ipts {
+                background-color: rgb(3, 121, 3);
+                text-align: center;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 10px;
+                color: white;
+                width: 100%;
+                height: 7%;
+                border-style: none;
+                margin-top: 10px;
+                cursor: pointer;
+            }
+            /* RESPONSIVE */
+            /* untuk zoomnya 100%, weight 400px dan heightnya 556px saat di inspek elemen ke Dimensions responsive */
+
+            @media screen and (max-width: 400px) {
+                .container-navbar{
+                    width: 400px;                   
+                }
+                .navbar1{
+                    margin-right: 50%;
+                }
+                .content_profile{
+                    height: 90%;
+                    width: 400px;
+                    margin-left: 0;
+                    margin-top: 5%;
+
+                }
+                .imeg{
+                    width: 50%;
+                    height: 40%;
+                    margin-left: 30%;       
+                }
+                .content2{
+                    margin-top: 30%;
+                }
+                p {
+                    text-align: center;
+                    font-size: 12px;
+                    position: relative;
+                    left: 5%;
+                }
+                .button1 {
+                    border-color: green;
+                    width: 70px;
+                    height: 50px;
+                }
+                .button2 {
+                    width: 70px;
+                    height: 50px;
+                    
+                }
+                .content3 {
+                    margin-top: 73%;
+                    margin-left: -180%;
+                }
+                .form {
+                    margin-top: 30%;
+                    width: 70%;
+                    height: 200%;
+                    margin-left: 15%;
+                    box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+                }
+                .pg {
+                    padding-top: 15%;
+                    margin-left: 5%;
+                    
+                    
+                    
+                }
+                .inputdata {
+                    width: 80%;
+                    height: 2%;
+                    margin-left: 10%;
+                    margin-top: 3%;
+                    margin-bottom: -20%;
+                    
+                }
+                .ipts {
+                    width: 80%;
+                    height: 2%;
+                    margin-top: 15%;
+                    margin-left: 10%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <!--NAVIGATION BAR-->
+        <div class="container-navbar">
+            <ul class="navbar1">
+                <li class="navbar2"><a href="HOME.html">HOME</a></li>
+                <li class="navbar2"><a href="PRODUCT.html">PRUDUCT</a></li>
+                <li class="navbar2"><a href="GALLERY.html">GALLERY</a></li>
+                <li class="navbar2"><a href="BLOG.html">BLOG</a></li>
+                <li class="navbar2"><a href="INVENTORY.html">MY INVENTORY</a></li>
+            </ul>
+        </div>
+        <!--PROFILE-->
+        <div class="content_profile">
+            <img class="imeg" src="..." alt="picture DEV">
+             <div class="content2">
+                <h2>Ramadiansyah</h2>
+                <p>Front End Designer</p>
+                 <div>
+                  <button class="button button1"><b>Kontak</b></button>
+                  <button class="button button2"><b>Resume</b></button>
+                   <div class="content3">
+                      <ul class="data">
+                          <li class="data1"><strong>Availability</strong></li>
+                          <li class="data1"><strong>Usia</strong></li>
+                          <li class="data1"><strong>Lokasi</strong></li>
+                          <li class="data1"><strong>Pengalaman</strong></li>
+                          <li class="data1"><strong>Email</strong></li>
+                      </ul>
+                      <div class="content4">
+                        <ul class="isidata">
+                            <li class="data2">Full Time</li>
+                            <li class="data2">24</li>
+                            <li class="data2">Jakarta, Indonesia</li>
+                            <li class="data2">Tidak Mempunyai Pengalaman</li>
+                            <li class="data2">Ramadyansah21@gmail.com</li>
+                        </ul> 
+                     </div> 
+                   </div>
+                 </div>
+             </div>
+           <div class="form">
+               <form class="isidata1"> 
+                <p class="pg"><b>Nama</b></p>
+                <input class="inputdata" type="text" name="Nama"><br>
+                <p class="pg"><b>Role</b></p>
+                <input class="inputdata" type="text" name="Role"><br>
+                <p class="pg"><b>Avaibility</b></p>
+                <input class="inputdata" type="text" name="Avaibility"><br>
+                <p class="pg"><b>Usia</b></p>
+                <input class="inputdata" type="number" name="Usia"><br>
+                <p class="pg"><b>Lokasi</b></p>
+                <input class="inputdata" type="text" name="Lokasi"><br>
+                <p class="pg"><b>Years Experience</b></p>
+                <input class="inputdata" type="number" name="Years Experience"><br>
+                <p class="pg"><b>Email</b></p>
+                <input class="inputdata" type="email" name="Email"><br>
+                <input class="ipts" type="submit" value="SUBMIT">
+               </form>
+           </div>
+        </div>
+    </body>
+</html>
